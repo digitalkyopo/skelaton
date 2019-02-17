@@ -76,15 +76,16 @@
       </div>
     </div>
 
-    <form method='post' action='contact-form-handler.php'>
+    <form action="https://formspree.io/thk116@gmail.com" method="POST" />
       <div class="row">
         <div class="six columns">
           <label for="exampleEmailInput">Your email</label>
-          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput" name="name">
+          type="text" name="name"
         </div>
         <div class="six columns">
           <label for="exampleRecipientInput">Reason for contacting</label>
-          <select class="u-full-width" id="exampleRecipientInput">
+          <select class="u-full-width" id="exampleRecipientInput" name="name">
             <option value="Option 1">Questions</option>
             <option value="Option 2">Admiration</option>
             <option value="Option 3">Can I get your number?</option>
@@ -92,12 +93,12 @@
         </div>
       </div>
       <label for="exampleMessage">Message</label>
-      <textarea class="u-full-width" placeholder="Hi Jeremy …" id="exampleMessage"></textarea>
+      <textarea class="u-full-width" placeholder="Hi Jeremy …" id="exampleMessage" name="name"></textarea>
       <label class="example-send-yourself-copy">
-        <input type="checkbox">
+        <input type="checkbox" name="name">
         <span class="label-body">Send a copy to yourself</span>
       </label>
-      <input class="button-primary" type="submit" value="Submit">
+      <input class="button-primary" type="submit" value="Submit" name="name">
     </form>
 
     <div class="row">
