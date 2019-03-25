@@ -416,3 +416,12 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+.greet {
+  font-family: 'Special Elite', cursive;
+}
+
+.night {
+  color: white;
+  background-color: black;
+}
