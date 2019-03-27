@@ -28,7 +28,7 @@
   <link rel="icon" type="image/png" href="images/jk-e.png">
 
 </head>
-<body class="night">
+<body class="night" id="lightSwitch">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -62,9 +62,14 @@
   -->
 
     <div class="row">
-      <div class="one-half column greet" style="margin-top: 15%; margin-left: 5%">
-        <h1 style="color: white">Hi,</h1>
-        <h1 style="color: white">I'm Jeremy.</h1>
+      <!--<div class="one-half column greet" style="margin-top: 15%; margin-left: 5%">>-->
+      <div class="eight columns mainfont night" id="lightSwitch" style="margin-top: 15%; margin-left: 5%">
+        <h1>Hi,</h1>
+        <h1>I'm Jeremy.</h1>
+      </div>
+      <div class="one columns mainfont" style="margin-top: 18%">
+        <button id="switch">Lights On</button>
+      </div>
         <!--
         <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
         <pre>
@@ -82,19 +87,19 @@
         </ul>
       </div>
     -->
-
     </div>
+
 
     <div class="twelve columns" style="margin-top: 30%">
     <form action="https://formspree.io/thk116@gmail.com" method="POST">
       <div class="row">
         <div class="one columns"></div>
         <div class="five columns">
-          <label class="night" for="exampleEmailInput">Your email</label>
+          <label class="night" id="lightSwitch" for="exampleEmailInput">Your email</label>
           <input class="u-full-width" type="email" placeholder="Your email" id="exampleEmailInput" name="name">
         </div>
         <div class="five columns">
-          <label class="night" for="exampleRecipientInput">Reason for contacting</label>
+          <label class="night" id="lightSwitch" for="exampleRecipientInput">Reason for contacting</label>
           <select class="u-full-width" id="exampleRecipientInput" name="name">
             <option value="Questions">Questions</option>
             <option value="Admiration">Admiration</option>
@@ -104,11 +109,11 @@
         <div class="one columns"></div>
       </div>
       <div class="ten columns">
-      <label class="night" for="exampleMessage">Message</label>
+      <label class="night" id="lightSwitch" for="exampleMessage">Message</label>
       <textarea class="u-full-width" placeholder="Hi Jeremy …" id="exampleMessage" name="name"></textarea>
-      <label class="example-send-yourself-copy night">
+      <label class="example-send-yourself-copy night" id="lightSwitch">
         <input type="checkbox" name="name">
-        <span class="label-body night">Send a copy to yourself</span>
+        <span class="label-body night" id="lightSwitch">Send copy to yourself</span>
       </label>
       <input class="button-primary" type="submit" value="Submit" name="name">
       </div>
@@ -118,13 +123,14 @@
     
 
     <div class="row">
-      <div class="twelve column night" style="margin-top: 15%">
+      <div class="twelve column night" id="lightSwitch" style="margin-top: 15%">
         <p>© 2019 Jeremy Kim, Inc. <span style="float: right"><a href="#">About Me</a> | <a href="#">What I Do</a> | <a href="#">Projects</a> | <a href="#">Contact Me</a></span></p>
       </div>
     </div>
-  </div>
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="script.js"></script>
 </body>
 </html>
