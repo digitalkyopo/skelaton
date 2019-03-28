@@ -16,7 +16,31 @@ let lightSwitch = function() {
         for(let item of light) {
             item.classList.toggle("light")
         }
-        document.getElementById("switch").textContent = "Lights Off"
+        let text = document.getElementById("switch").textContent
+        console.log('text: ', text)
+
+        if(text === "Lights On") {
+            console.log("Lights are now off")
+            text = "Lights Off"
+            return text
+        } else {
+            console.log("Lights are now on")
+            text = "Lights On"
+            return text
+        }
+
+        /*
+        switch(text) {
+            case "Lights On":
+            text = "Lights Off"
+            break
+            case "Lights Off":
+            text = "Lights On"
+            break
+            default:
+            text = "Lights On"
+        }
+        */
     })
 }
 
