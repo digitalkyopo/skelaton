@@ -13,34 +13,17 @@ let lightSwitch = function() {
     console.log("bang")
     document.querySelector("#switch").addEventListener("click", () => {
         let light = document.getElementsByClassName("night")
+        let text = document.getElementById("switch").textContent
+
         for(let item of light) {
             item.classList.toggle("light")
         }
-        let text = document.getElementById("switch").textContent
-        console.log('text: ', text)
 
         if(text === "Lights On") {
-            console.log("Lights are now off")
-            text = "Lights Off"
-            return text
+            document.getElementById("switch").textContent = "Lights Off"
         } else {
-            console.log("Lights are now on")
-            text = "Lights On"
-            return text
+            document.getElementById("switch").textContent = "Lights On"
         }
-
-        /*
-        switch(text) {
-            case "Lights On":
-            text = "Lights Off"
-            break
-            case "Lights Off":
-            text = "Lights On"
-            break
-            default:
-            text = "Lights On"
-        }
-        */
     })
 }
 
