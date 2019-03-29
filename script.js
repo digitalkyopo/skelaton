@@ -23,8 +23,10 @@ let lightSwitch = function() {
 
         if(text === "Lights On") {
             switchButton.textContent = "Lights Off"
+            switchButton.style.backgroundColor = "#ff5b5b"
         } else {
             switchButton.textContent = "Lights On"
+            switchButton.style.backgroundColor = "#00ffe9"
         }
     })
 }
